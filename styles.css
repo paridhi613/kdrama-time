@@ -1,0 +1,130 @@
+body {
+    background-image: url("background.jpg");
+    /* background-size: 100%; */
+    font-family: sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+    background-size: cover;
+    /* fills screen, keeps ratio */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* optional */
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+#wrapper {
+    background-color: #eee;
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+#page-banner {
+    background-image: url("cover.jpg");
+    background-size: 70%;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+#page-banner h1,
+#page-banner p {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#movie-list,
+#add-movie {
+    margin: 30px;
+}
+
+#movie-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#movie-list li {
+    padding: 20px;
+    border-left: 5px solid #b9b2c6;
+    margin: 20px 10px;
+}
+
+#movie-list li:hover {
+
+    border-color: rgb(225, 71, 225);
+}
+
+.delete {
+    float: right;
+    background: red;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover {
+    background: darkred;
+}
+
+#add-movie {
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* align vertically */
+    gap: 0;
+    /* no gap between input and button */
+    margin-top: 20px;
+}
+
+#add-movie input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    /* rounded left */
+    width: 300px;
+    margin: 0;
+
+
+}
+
+#add-movie button {
+    border: 1px solid green;
+    background: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0 4px 4px 0;
+    /* rounded right */
+    cursor: pointer;
+    color: white;
+    margin: 0;
+}
+
+#add-movie button:hover {
+    background: darkblue;
+
+}
+
+#add-movie:after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+#add-movie label {
+    line-height: 52px;
+}
